@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="font-family.css">
+    <script src="neon.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   <div id="container" class="flex flex-col md:flex-row">
+    <div id="preview" class="bg-black h-96 flex justify-center items-center md:h-screen md:w-4/6">
+        <div id="text-container" class="relative">
+            <span class="text-white text-3xl">Mehdi</span>
+            <div id="left-arrow" class="bg-slate-400 w-px h-full absolute top-0 -left-2"></div>
+            <div id="bottom-arrow" class="bg-slate-400 w-full h-px absolute -bottom-1"></div>
+        </div>
+    </div>
+    <div id="settings" class="bg-slate-100 p-3 md:w-2/6 md:max-h-screen md:overflow-x-scroll">
+        <div class="pt-3 mb-2 text-center">What would you like your neon to say?</div>
+        <textarea cols="30" rows="10" class="w-full mb-3"></textarea>
+        <div class="pt-3 text-center pb-3">Choose a font that suits your style!</div>
+        <div id="fonts-container" class="grid grid-cols-3 gap-3.5" style="grid-auto-rows: 50px;">
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-alexandra">Alexandra</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-amanda">Amanda</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-barcelony">Barcelony</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-Neon-assalwa">Assalwac</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-Bayshore">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-Budhayanti">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-Gruenewald">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-Hamillton">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-Hesterica">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-Patio">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-learning">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-littleDay">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-Northwell">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-Photograph">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-Quinzey">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-Rocket">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-Bauhaus">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-Circular">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-Comfortaa">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-courierNew">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-DolceVita">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-Kiona">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-ClubMusic">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-nixieOne">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-PaperDaisy">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-SpaceGalaxy">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-OutlineAllstar">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-DoubleCozy">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-OutlineLoveLoLine">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-OutlineMarqueeMoon">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-OutlineMetropolis1920">Artistic</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center font-OutlineNEONGLOW">Artistic</div>
+
+
+        </div>
+        <div class="pt-3 text-center pb-3">Pick your colour.</div>
+        <div id="color-container" class="flex flex-wrap" >
+            <div class="flex flex-col justify-center basis-28 max-w-1/4 mb-6">
+                <div class="w-12 h-12 bg-white border border-black rounded-full mx-auto cursor-pointer hover:border-black hover:border transition-all"></div>
+                <span class="text-center">White</span>
+            </div>
+            <div class="flex flex-col justify-center basis-28 max-w-1/4 mb-6">
+                <div class="w-12 h-12 bg-red-50 rounded-full mx-auto cursor-pointer hover:border-black hover:border transition-all"></div>
+                <span class="text-center">Warm white</span>
+            </div>
+             <div class="flex flex-col justify-center basis-28 max-w-1/4 mb-6">
+                <div class="w-12 h-12 bg-amber-300 rounded-full mx-auto cursor-pointer hover:border-black hover:border transition-all"></div>
+                <span  class="text-center">Sun Yellow</span>
+            </div>
+             <div class="flex flex-col justify-center basis-28 max-w-1/4 mb-6">
+                <div class="w-12 h-12 bg-yellow-300 rounded-full mx-auto cursor-pointer hover:border-black hover:border transition-all"></div>
+                <span  class="text-center">Yellow</span>
+            </div>
+             <div class="flex flex-col justify-center basis-28 max-w-1/4 mb-6">
+                <div class="w-12 h-12 bg-amber-500 rounded-full mx-auto cursor-pointer hover:border-black hover:border transition-all"></div>
+                <span  class="text-center">Orange</span>
+            </div>
+        </div>
+         <div class="pt-3 text-center pb-3">Select your size</div>
+        <div id="size-container" class="grid grid-cols-2 gap-3.5" style="grid-auto-rows: 66px;">
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center">Small</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center ">Medium</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center ">Large</div>
+            <div class="bg-slate-200 cursor-pointer border border-stone-400 flex justify-center items-center">X Large</div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
