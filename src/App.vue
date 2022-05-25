@@ -1,5 +1,5 @@
 <template>
-  <div id="app"><preview /><options /></div>
+  <div id="app" class="lg:flex"><preview /><options /></div>
 </template>
 
 <script>

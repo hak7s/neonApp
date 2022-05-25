@@ -5,16 +5,16 @@
     >
       {{ section.header }}
       <div class="flex items-center">
-        <span class="text-sm text-gray-400"> {{ progress }}</span>
+        <span class="text-sm text-gray-400 lg:hidden"> {{ progress }}</span>
         <div
-          class="cursor-pointer rounded-full p-2 active:bg-gray-200 flex items-center justify-center transition-all transform rotate-180"
+          class="lg:hidden cursor-pointer rounded-full p-2 active:bg-gray-200 flex items-center justify-center transition-all transform rotate-180"
           :class="{ 'opacity-20 cursor-default': !hasPrevious }"
           @click="sendEvent('previous', hasPrevious)"
         >
           <img src="@/assets/arrow.svg" class="w-3 h-3" />
         </div>
         <div
-          class="cursor-pointer rounded-full p-2 active:bg-gray-200 flex items-center justify-center transition-all"
+          class="lg:hidden cursor-pointer rounded-full p-2 active:bg-gray-200 flex items-center justify-center transition-all"
           :class="{ 'opacity-20 cursor-default': !hasNext }"
           @click="sendEvent('next', hasNext)"
         >
@@ -35,7 +35,23 @@ import SectionSize from "@/components/sections/sectionSize";
 import SectionColor from "@/components/sections/sectionColor";
 
 export default {
-  props: ["section", "hasNext", "hasPrevious", "progress"],
+  props: {
+    section: {
+      required: true,
+    },
+    hasNext: {
+      required: false,
+      default: false,
+    },
+    hasPrevious: {
+      required: false,
+      default: false,
+    },
+    progress: {
+      required: false,
+      default: "",
+    },
+  },
   components: {
     SectionText,
     SectionFont,

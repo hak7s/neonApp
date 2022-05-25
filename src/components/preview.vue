@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-black min-w-52 h-[40vh] text-white flex flex-col p-3">
+  <div
+    class="bg-black min-w-52 h-[40vh] text-white flex flex-col p-3 lg:h-screen lg:w-[60vw]"
+  >
     <span class="text-2xl tracking-wide self-end"> {{ price + "€" }}</span>
     <div class="self-center flex items-center h-full">
       <div class="text-[3rem] relative">

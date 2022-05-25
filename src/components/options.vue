@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[60vh] overflow-y-scroll">
+  <div class="h-[60vh] overflow-y-scroll lg:h-screen lg:w-[40vw]">
     <optionSection
       :section="sections[current]"
       :has-next="current < sections.length - 1"
@@ -7,6 +7,13 @@
       @next="current++"
       @previous="current--"
       :progress="current + 1 + '/' + sections.length"
+      class="block lg:hidden"
+    />
+    <optionSection
+      v-for="(section, index) in sections"
+      :key="index"
+      :section="section"
+      class="lg:block hidden"
     />
   </div>
 </template>
